@@ -70,6 +70,8 @@ spec:
             value: "http"
           - name: FLUENTD_SYSTEMD_CONF
             value: disable
+          - name: FLUENT_CONTAINER_TAIL_PARSER_TYPE
+            value: "/^(?<time>.+) (?<stream>stdout|stderr) [^ ]* (?<log>.*)$/"
         resources:
           limits:
             memory: 512Mi

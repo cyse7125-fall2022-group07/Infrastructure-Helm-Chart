@@ -106,7 +106,6 @@ spec:
         app: elasticsearch
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: gp2
       resources:
         requests:
           storage: 100Gi

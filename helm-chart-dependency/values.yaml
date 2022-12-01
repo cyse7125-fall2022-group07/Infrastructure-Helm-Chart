@@ -71,6 +71,9 @@ resources:
   # requests:
   #   cpu: 100m
   #   memory: 128Mi
+elasticsearch:
+  service:
+    type: LoadBalancer
 
 autoscaling:
   enabled: false
@@ -90,9 +93,10 @@ kafka:
   metrics:
     kafka:
       enabled: true
+  externalAccess:
+    enabled: true
+    autoDiscovery:
+      enabled: true
   rbac:
     create: true
-    externalAccess:
-      enabled: true
-      autoDiscovery:
-        enabled: true
+
