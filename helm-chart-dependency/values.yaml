@@ -101,22 +101,15 @@ kafka:
     create: true
 
 prometheus:
+  extraScrapeConfigs: |
+    - job_name: 'node scrape'
+      metrics_path: '/metrics'
+      scrape_interval: 5s
+      static_configs:
+        - targets: ['a64b8abc45ed744aba33ec1941468779-510001338.us-east-1.elb.amazonaws.com:3030']
   server:
     port: 9090
     global:
       scrape_interval: 15s
       evaluation_interval: 15s
       scrape_timeout: 10s
-  serverFiles:
-    prometheus.yml:
-      rule_files:
-        - /etc/config/recording_rules.yml
-        - /etc/config/alerting_rules.yml
-      scrape_configs:
-        - job_name: webapp
-          scrape_interval: 10s
-          scrape_timeout: 10s
-          honor_labels: true
-          metrics_path: /metrics
-          static_configs:
-            - targets: ['todo-app:3030']
