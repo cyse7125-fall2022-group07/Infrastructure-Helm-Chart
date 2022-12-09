@@ -74,6 +74,8 @@ resources:
 elasticsearch:
   service:
     type: LoadBalancer
+  metrics:
+      enabled: true
 
 autoscaling:
   enabled: false
@@ -106,7 +108,7 @@ prometheus:
       metrics_path: '/metrics'
       scrape_interval: 5s
       static_configs:
-        - targets: ['a64b8abc45ed744aba33ec1941468779-510001338.us-east-1.elb.amazonaws.com:3030']
+        - targets: ['aaa4e9dffbf42487ebb8e37bdbf20b42-1650927694.us-east-1.elb.amazonaws.com:3030']
   server:
     port: 9090
     global:
