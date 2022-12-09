@@ -9,4 +9,4 @@ spec:
     name: letsencrypt-cert-prod
     kind: ClusterIssuer
   dnsNames:
-  - prod.aws.shrawanikarpe.me
+  - {{ .Values.certificate.dnsNames }}
