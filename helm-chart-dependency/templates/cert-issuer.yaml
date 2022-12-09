@@ -7,7 +7,7 @@ spec:
   acme:
     # For staging: https://acme-staging-v02.api.letsencrypt.org/directory
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: karpe.s@northeastern.edu
+    email: {{ .Values.certificate.email }}
     privateKeySecretRef:
       name: letsencrypt-cert-prod
     solvers:
