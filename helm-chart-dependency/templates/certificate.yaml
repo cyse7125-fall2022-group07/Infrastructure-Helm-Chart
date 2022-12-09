@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: istio-certificate
+  namespace: istio-ns
+spec:
+  secretName: istio-certificate-secrets
+  issuerRef:
+    name: letsencrypt-cert-prod
+    kind: ClusterIssuer
+  dnsNames:
+  - prod.aws.shrawanikarpe.me
