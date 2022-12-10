@@ -17,9 +17,6 @@ dependencies:
 - name: grafana
   version: 6.44.2
   repository: https://grafana.github.io/helm-charts
-- name: elastic-search-exporter
-  version: 5.0.0
-  repository: https://prometheus-community.github.io/helm-charts
 
 # A chart can be either an 'application' or a 'library' chart.
 #
