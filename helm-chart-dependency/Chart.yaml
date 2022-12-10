@@ -8,6 +8,9 @@ dependencies:
 - name: elasticsearch
   version: 19.5.4
   repository: https://charts.bitnami.com/bitnami
+- name: cluster-autoscaler
+  version: 9.21.0
+  repository: https://kubernetes.github.io/autoscaler
 - name: prometheus
   version: 15.18.0
   repository: https://prometheus-community.github.io/helm-charts
