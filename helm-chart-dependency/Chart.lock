@@ -5,11 +5,14 @@ dependencies:
 - name: elasticsearch
   repository: https://charts.bitnami.com/bitnami
   version: 19.5.4
+- name: cluster-autoscaler
+  repository: https://kubernetes.github.io/autoscaler
+  version: 9.21.0
 - name: prometheus
   repository: https://prometheus-community.github.io/helm-charts
   version: 15.18.0
 - name: grafana
   repository: https://grafana.github.io/helm-charts
   version: 6.44.2
-digest: sha256:009be2c6c7bb9082b74390390db92ade6bfc6526563d7954b5b7da35230bf3c2
-generated: "2022-12-02T16:50:01.9283091-05:00"
+digest: sha256:be72f8bd7b46ec22259b52396fee2689b2baaedfa014e129899a56187c631010
+generated: "2022-12-10T03:43:15.713381-05:00"
