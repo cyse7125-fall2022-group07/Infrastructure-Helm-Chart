@@ -14,5 +14,8 @@ dependencies:
 - name: grafana
   repository: https://grafana.github.io/helm-charts
   version: 6.44.2
-digest: sha256:be72f8bd7b46ec22259b52396fee2689b2baaedfa014e129899a56187c631010
-generated: "2022-12-10T03:43:15.713381-05:00"
+- name: cert-manager
+  repository: https://charts.jetstack.io
+  version: v1.10.0
+digest: sha256:495db89fb2b7c7f938f028194348098dc953663d11bedc95ba7bce16018f5b9d
+generated: "2022-12-10T05:14:39.791003-05:00"

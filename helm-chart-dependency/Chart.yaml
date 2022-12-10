@@ -17,6 +17,11 @@ dependencies:
 - name: grafana
   version: 6.44.2
   repository: https://grafana.github.io/helm-charts
+- name: cert-manager
+  version: v1.10.0
+  repository: https://charts.jetstack.io
+  alias: cert-manager
+  condition: cert-manager.enabled
 
 # A chart can be either an 'application' or a 'library' chart.
 #
